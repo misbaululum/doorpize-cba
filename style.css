@@ -1,0 +1,170 @@
+body {
+    background: rgb(49,0,144);
+    background: radial-gradient(circle, rgba(49,0,144,1) 0%,rgba(15,0,48,1) 80%);
+    min-height: 100vh;
+}
+
+.doorprize-title {
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 60px; /* Atur padding sesuai kebutuhan */
+    font-family: 'Arial', sans-serif; /* Ganti dengan jenis font yang diinginkan */
+    font-size: 24px; /* Atur ukuran font sesuai kebutuhan */
+}
+
+
+.loader-container {
+    max-width: 210px;
+    margin: 0 auto;
+}
+.slot-machine {
+    max-width: 400px;
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+}
+.slot-machine > img {
+    display: block;
+    position: relative;
+    right: 110px;
+    top: 20px;
+}
+
+.slotwrapper {
+    box-sizing: border-box; /* Pastikan padding tidak menambah lebar */
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 210px;
+    width: 150%;
+    bottom: 18px;
+    padding: 0 10px;
+    background: #fff;
+    margin-left: -110px;
+    margin-right: auto;
+    top: 300px;
+    border-radius: 7px;
+}
+
+
+.slotwrapper ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    width: 150px;
+    height: 200px;
+    font-size: 150px;
+    line-height: 200px;
+    text-align: center;
+}
+
+.slotwrapper ul li img {
+   vertical-align: top;
+}
+.slotwrapper > ul > li {
+   background: #fff;
+   font-size: 0.5em;
+/*   box-shadow: 0px 0px 49px 15px rgba(0,0,0,0.37) inset;
+-webkit-box-shadow: 0px 0px 49px 15px rgba(0,0,0,0.37) inset;
+-moz-box-shadow: 0px 0px 49px 15px rgba(0,0,0,0.37) inset; */
+ 
+}
+.slot-machine-btn {
+   position: absolute;
+   top: 53%;
+   right: -180px;
+   transform: translate(0, -50%);
+   background: transparent;
+   border: none;
+   width: 80px;
+   margin-top: 70px;
+   transition: 0.4s all ease-in-out;
+}
+.slot-machine-btn.clicked {
+   transform: translate(0, -50%) rotateX(190deg);
+}
+button#btn-example1:hover > img {
+   filter: drop-shadow(2px 4px 6px yellow);
+}
+button#btn-example1 > img {
+   transition: 0.4s all ease-in-out;
+  user-select: none;
+}
+:not(button) img {
+ pointer-events: none;
+}
+/* Media Queries untuk Responsivitas */
+@media (max-width: 768px) {
+    .doorprize-title {
+        color: whitesmoke;
+        text-align: center;
+        padding-top: 120px; /* Atur padding sesuai kebutuhan */
+        font-family: 'Arial', sans-serif; /* Ganti dengan jenis font yang diinginkan */
+        font-size: 24px; /* Atur ukuran font sesuai kebutuhan */
+    }
+
+    .slot-machine {
+        max-width: 90%; /* Lebar maksimum lebih besar di mobile */
+    }
+
+    .slot-machine > img {
+        right: 0; /* Atur posisi gambar */
+        max-width: 150%;
+        top: 10px; /* Atur posisi gambar */
+    }
+
+    .slotwrapper {
+        box-sizing: border-box; /* Pastikan padding tidak menambah lebar */
+        position: absolute;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 160px;
+        width: 135%;
+        bottom: 5px;
+        padding: 0 10px;
+        background: #fff;
+        margin-left: 10px;
+        margin-right: auto;
+        top: 200px;
+        border-radius: 7px;
+    }
+
+    .slotwrapper ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: relative;
+        width: 150px;
+        height: 260px;
+        font-size: 180px;
+        line-height: 220px;
+        text-align: center;
+    }
+
+    .slot-machine-btn {
+        right: 53%; /* Atur posisi tombol */
+        margin-top: 20px; /* Padding lebih kecil */
+        top: 59%;
+        right: -180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .doorprize-title {
+        font-size: 18px; /* Ukuran font lebih kecil untuk perangkat sangat kecil */
+    }
+
+    .slotwrapper ul {
+        font-size: 80px; /* Ukuran font lebih kecil */
+        line-height: 80px; /* Tinggi baris lebih kecil */
+    }
+
+    .slot-machine-btn {
+        width: 60px; /* Ukuran tombol lebih kecil */
+    }
+}
