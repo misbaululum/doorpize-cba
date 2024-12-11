@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 20px;
-            background-color: #007BFF;
+            background-color: #07be20;
             color: white;
         }
         h1 {
@@ -41,26 +41,26 @@
             padding: 10px 20px;
             font-size: 24px;
             cursor: pointer;
-            background-color: tomato;
+            background-color: rgb(238, 54, 22);
             color: white;
             border: none;
             border-radius: 5px;
             transition: background-color 0.3s; /* Efek transisi */
         }
         .spin-button:hover {
-            background-color: rgb(71, 255, 111);
+            background-color: rgb(248, 113, 23);
         }
-        .button-hijau {
+        .button-biru {
             padding: 10px 20px;
             font-size: 24px;
             cursor: pointer;
-            background-color: rgb(14, 168, 14);
+            background-color: rgb(45, 122, 223);
             color: white;
             border: none;
             border-radius: 5px;
             transition: background-color 0.3s; /* Efek transisi */
         }
-        .button-hijau:hover {
+        .button-biru:hover {
             background-color: rgb(255, 206, 71);
         }
         @media (max-width: 600px) {
@@ -72,7 +72,7 @@
 </head>
 <body>
     <h1>UNDIAN DOORPRIZE FAMILY GATHERING 2024</h1>
-    <h2>DOORPRIZE BIRU</h2>
+    <h2>DOORPRIZE HIJAU</h2>
     <div class="slot-container">
         <div class="digit" id="digit1">0</div>
         <div class="digit" id="digit2">0</div>
@@ -80,9 +80,9 @@
         <div class="digit" id="digit4">0</div>
     </div>
     <button class="spin-button" onclick="spin()">Spin</button>
-    <button class="button-hijau" onclick="window.location.href='hijau.html'">Doorprize Hijau</button>
+    <button class="button-biru" onclick="window.location.href='biru.html'">Doorprize Biru</button>
 
-    <!-- <script>
+    <script>
         function spin() {
             const digits = [
                 document.getElementById('digit1'),
@@ -129,9 +129,9 @@
                 }, (index + 1) * 7000); // Waktu berhenti setiap digit bertambah hingga total 15 detik
             });
         }
-    </script> -->
+    </script>
 
-    <script>
+    <!-- <script>
         function spin() {
             const digits = [
                 document.getElementById('digit1'),
@@ -175,9 +175,9 @@
                     if (index === digits.length - 1) {
                         const finalValue = parseInt(finalNumbers.join(''), 10);
                     }
-                }, (index + 1) * 7000); // Waktu berhenti setiap digit bertambah hingga total 15 detik
+                }, (index + 1) * 4000); // Waktu berhenti setiap digit bertambah hingga total 15 detik
             });
         }
-    </script>
+    </script> -->
 </body>
 </html>

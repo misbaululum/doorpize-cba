@@ -53,23 +53,12 @@ function generateUniqueEndNum(existingNums, index) {
     return newNum;
 }
 
-// Function to generate a complete random number
+// Function to generate a complete random number within the range 1001 - 1121
 function generateCompleteRandomNumber() {
-    let digits = [];
-    // First digit (0 or 1)
-    digits.push(Math.floor(Math.random() * 2)); // 0 or 1
-
-    // Next three digits (0-9)
-    for (let i = 0; i < 3; i++) {
-        let newDigit;
-        do {
-            newDigit = Math.floor(Math.random() * 10); // 0-9
-        } while (digits.includes(newDigit)); // Ensure uniqueness
-        digits.push(newDigit);
-    }
-
-    return parseInt(digits.join(''), 10); // Join and convert to number
+    // Generate a random number between 1001 and 1121 (inclusive)
+    return Math.floor(Math.random() * (1121 - 1001 + 1)) + 1001;
 }
+
 
 // Reset initial state to `0000`
 function resetToInitialState(selector) {
