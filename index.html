@@ -156,9 +156,9 @@
             const generateFinalNumbers = () => {
                 let randomNumber;
                 do {
-                    randomNumber = 1001 + Math.floor(Math.random() * 121); // Angka acak dalam rentang 1001-1121
-                } while (randomNumber < 1001 || randomNumber > 1121);
-
+                    randomNumber = 1001 + Math.floor(Math.random() * 131); // Angka acak dalam rentang 1001-1131
+                } while (randomNumber < 1001 || randomNumber > 1131);
+            
                 return String(randomNumber).padStart(4, '0').split('').map(Number);
             };
 
